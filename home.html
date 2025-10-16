@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- seo meta tags -->
-    <meta>
-    <title>Multi Page Website</title>
+    <link rel="stylesheet" href="styles.css">
     <!-- seo meta tags -->
     <meta name="description" content="Website for Nyongesa Ryan Wekesa.">
     <meta name="keywords" content=" Full-Stack Developer, Web Developer, Nairobi, Kenya, Nyongesa Ryan Wekesa">
@@ -20,67 +18,56 @@
 <body>
     <!-- project header -->
     <header>
-        <div>
-            <div>
-                <p>Nyongesa Ryan Wekesa</p>
-            </div>
-            <div>
-                <!-- navigation bar -->
-                <nav>
-                    <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="articles.html">Articles</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ol>
-                </nav>
-            </div>
-            <div>
-                <h2>FrontEnd Developer</h2>
-                <p>html only with proper layout no styling</p>
-            </div>
-        </div>
+        <nav>
+            <span>🏢Nyongesa Wekesa</span>
+            <ul>
+                <li class="li"><a href="home.html">Home</a></li>
+                <li class="li"><a href="contact.html">Contacts</a></li>
+                <li class="li"><a href="articles.html">Articles</a></li>
+                <li class="li"><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+            <h1 class="title">Front-end Developer</h1>
+            <h4 class="subtitle">html only with proper layout no styling</h4>
     </header>
 
     <main>
-        <section>
-            <div>
-                <h3>Projects</h3>
-                <ul>
-                    <li>HTML Only Portfolio</li>
-                    <li>Calculator</li>
-                    <li>Quiz App</li>
-                    <li>Countdown Timer</li>
-                    <li>Product Upcoming Page</li>
-                </ul>
+        <section class='projects'>
+            <div style="width:90%; margin:auto">
+                <h5>Projects</h5>
+                <p>HTML Only Portfolio</p>
+                <hr/>
+                <p>Calculator</p>
+                <hr/>
+                <p>Quiz App</p>
+                <hr/>
+                <p>Countdown Timer</p>
+                <hr/>
+                <p>Product Upcoming Page</p>
+                <hr/>
             </div>
         </section>
 <!-- work experience -->
-        <section>
-            <div>
-                <h3>Work Experience</h3>
-                <h4>roadmap.sh</h4>
+        <section class="work_exp">
+            <div style="width: 90%">
+                <h5>Work Experience</h5>
+                <h5>roadmap.sh</h5>
                 <p>Solved all the frontend projects</p>
-                <a href="github.com">Visit my Profile</a>
-            </div>
-            <div>
-                <h4>OpenSource Work</h4>
+                <a href="https://github.com/rayjamil07/Front-end-Projects">Visit my Profile</a>
+              <hr/>
+                <h5>OpenSource Work</h5>
                 <p>Contributed to 50 opensource projects. Made my own projects with 200 Github Stars</p>
-                <a href="github.com">Visit my Github Profile</a>
+                <a href="https://github.com/rayjamil07">Visit my Github Profile</a>
             </div>
         </section>
 <!-- education section -->
-        <section>
-            <div>
-                <div>
-                    <h3>Education</h3>
-                    <p>Graduated with 3.76 out of 4 CGPA.</p>
-                    <p> Won Acme Hackathon.</p>
-                    <p> Organized 30 sessions.</p>
-                    <p>Courses I took;</p>
-                </div>
-                <div>
-                    <ol>
+        <section class="education">
+                <div style="width: 80%; margin: auto">
+                    <h5>Education</h5>
+                    <p>Studied ath the Jomo Kenyatta UNiversity of Agriculture and Technology</p>
+                    <p>Courses I took:</p>
+                
+                    <ul>
                         <li>Object Oriented Programming</li>
                         <li>Data Sructures and Algorithms</li>
                         <li>Web Engineering</li>
@@ -90,23 +77,41 @@
                         <li>Database Management Systems</li>
                         <li>Distributed Database Systems</li>
                         <li>Discreet Mathematics</li>
-                    </ol>
+                    </ul>
+                </div>
+        </section>
+
+    </main>
+<!-- review section -->
+        <section>
+            <h5>Reviews from my Teachers</h5>
+
+            <div class="reviews">
+                <div class="card">
+                    <p>John Doe was a brilliant student: always stood out with his assignments</p>
+                    <p>Jane Doe</p>
+                    <p>Assistant Director</p>
+                </div>
+
+                <div class="card">
+                    <p>John Doe was a brilliant student: always stood out with his assignments</p>
+                    <p>Jane Doe</p>
+                    <p>Assistant Director</p>
+                </div>
+
+                <div class="card">
+                    <p>John Doe was a brilliant student: always stood out with his assignments</p>
+                    <p>Jane Doe</p>
+                    <p>Assistant Director</p>
                 </div>
             </div>
         </section>
-<!-- review section -->
-        <section>
-            <div>
-                <h3>Reviews from my Teachers</h3>
-            </div>
-        </section>
         
-    </main>
 <!-- footer section -->
     <footer>
         <section>
-            <div>
-                <p>Copyright all rights reserved 2025</p>
+            <div class="footer">
+                <p>&copy; 2025 Ryan Nyongesa. Hakuna kuiba 😂</p>
             </div>
         </section>
     </footer>

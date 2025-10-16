@@ -1,0 +1,194 @@
+* {
+    background-color: white;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.li {
+    list-style: circle;
+    margin: 0 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    font-size: 1.2rem;
+    margin-right: 55%;
+    color: rgb(127, 127, 127);
+}
+
+.title {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+hr {
+    border: 1px solid rgb(29, 29, 29);
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgb(131, 131, 131)
+}
+
+main {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border: 2px solid rgba(0,0,0,0.7);
+    border-right: none;
+    border-left: none;
+    color: rgb(21,21,21);
+    width: 95%;
+    margin: auto;
+}
+
+.projects {
+    font-size: 1.1rem;
+    grid-area: 1/1/2/2;
+    width: 90%;
+    border-right: 2px solid rgba(0,0,0,0.7);
+}
+
+.work_exp {
+    grid-area: 1/2/2/3;
+    border-right: 2px solid rgba(0,0,0,0.7);
+    font-size: 1.1rem;
+    width:90%;
+}
+
+.education {
+    font-size: 1.1rem;
+    grid-area: 1/3/2/4;
+    padding-bottom: 1.5vh;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    border: 2px solid rgba(0,0,0,0.7);
+    width: 32%;
+    height: 30vh;
+    margin: auto;
+    padding-left: 2vh;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    word-wrap: wrap;
+    background-color: rgb(157, 157, 157);
+    transition: all 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+
+nav {
+    margin: auto;
+    align-items: center;
+    font-size: 1 rem;
+}
+
+@media screen and (max-width: 1350px) {
+    .title {
+        font-size:3rem;
+    }
+    .subtitle {
+        font-size: 1rem;
+    }
+    span {
+        margin-right: 45%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    span {
+        margin-right: 20%;
+    }
+}
+@media screen and (max-width: 770px) {
+    nav {
+        margin: auto;
+        font-size: 1rem;
+    }
+    span {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 570px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    header {
+        height: auto;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .education,
+    .work_exp,
+    .projects {
+        grid-area: auto;
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid rgba(0,0,0,0.7);
+        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .reviews {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        height: auto;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+}
